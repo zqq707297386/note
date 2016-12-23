@@ -43,10 +43,20 @@
 >      ],
 
 
-
 ## 切换成淘宝镜像 ##
 
 >     npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 
+## 更改端口 ##
 
+
+>     config/index
+>       dev: {
+>     env: require('./dev.env'),
+>     port: 8090,//这里更换端口
+>     assetsSubDirectory: 'static',
+>     assetsPublicPath: '/',
+>     proxyTable: {},
+>     cssSourceMap: false
+>       }
